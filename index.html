@@ -25,21 +25,42 @@
 		padding: 2rem;
 		background-color: rgb(9, 45, 111);
 	}
-
+	
 	a {
 		text-decoration: none;
 		color: black;
 	}
-
+	
 	main {
 		text-align: center;
 	}
-
+	
 	img {
 		width: 80px;
 		border-radius: 100%;
 		box-shadow: 0 1rem 1rem rgba(56, 56, 56, 0.096);
+		
+	}
+	
+	form {
+		width: 100vw;
+		padding: 1rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 1rem;
+		color: white;
+		background-color: rgb(9, 45, 111);
+	}
 
+	input {
+		width: 40vw;
+		outline: none;
+		border-radius: 10rem;
+		border-width: 1px;
+		border-color: lightgray;
+		padding: .5rem;
+		padding-left: 1rem;
 	}
 
 	section {
@@ -79,17 +100,56 @@
 <body>
 	<main>
 		<h1>Helpful Shortcuts</h1>
-		<section>
 
-			<a href="https://stackoverflow.com">
+		<form>
+			<label for="search">Search</label>
+			<input id="search" name="search" list="searches" type="text">
+			<datalist id="searches">
+				<option value="Codacy">
+				<option value="GitHub">
+				<option value="Gmail">
+				<option value="Kaggle">
+				<option value="Neuron AI">
+				<option value="StackOverflow">
+				<option value="YouTube">
+			</datalist>
+		</form>
+
+		<section>
+			<a href="https://stackoverflow.com/users/login">
 				<div><img src="images/stackoverflow.png" alt="stackoverflow logo">
 					<span>StackOverflow</span>
 				</div>
 			</a>
 			
-			<a href="https://github.com">
+			<a href="https://github.com/login">
 				<div><img src="images/github.png" alt="github logo">
 					<span>GitHub</span>
+				</div>
+			</a>
+			
+			<a href="https://codacy.com/login">
+				<div><img src="images/codacy.png" alt="codacy logo">
+					<span>Codacy</span>
+				</div>
+			</a>
+
+			
+			<a href="https://kaggle.com/account/login">
+				<div><img src="images/kaggle.jpg" alt="kaggle logo">
+					<span>Kaggle</span>
+				</div>
+			</a>
+			
+			<a href="https://youtube.com/">
+				<div><img src="images/youtube.jpg" alt="youtube logo">
+					<span>YouTube</span>
+				</div>
+			</a>
+			
+			<a href="https://gmail.com/login">
+				<div><img src="images/gmail.jpg" alt="gmail logo">
+					<span>Gmail</span>
 				</div>
 			</a>
 			
@@ -99,15 +159,9 @@
 				</div>
 			</a>
 			
-			<a href="https://codacy.com">
-				<div><img src="images/codacy.png" alt="codacy logo">
-					<span>Codacy</span>
-				</div>
-			</a>
-
-			<a href="https://kaggle.com">
-				<div><img src="images/kaggle.jpg" alt="kaggle logo">
-					<span>StackOverflow</span>
+			<a href="https://neuron-ai.github.io">
+				<div><img src="images/neuronai.png" alt="neuron ai logo">
+					<span>Neuron AI</span>
 				</div>
 			</a>
 
